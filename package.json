@@ -1,0 +1,19 @@
+{
+  "name": "Backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Abdullah Zakariyya",
+    "email": "dragontrybe@pm.me",
+    "contact": "+2349055092611"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "truffle": "^5.1.41"
+  }
+}
