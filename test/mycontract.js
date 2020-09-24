@@ -185,16 +185,14 @@ contract('Product Contract', () => {
         try {
             await contract.deleteUserAccount();
             await contract.findUserByAddress(account1);
-            // await contract.findProduct(1);
         } catch (error) {
             assert(error.message.includes('User does not exist'));
-            // assert(error.message.includes('Product does not exist!'));
             return;
         }
         assert(false);
     })
 
-    it('should not delete a non user account', async () => {
+    it('should not delete a non existing user account', async () => {
         try {
             await contract.deleteUserAccount({ from: account2 });
         } catch (error) {
