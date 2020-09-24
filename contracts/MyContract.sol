@@ -117,8 +117,8 @@ contract MyContract is UserContract {
             "Only valid owner is allowed to delete product"
         );
         delete products[_productId];
-        require(products[_productId]._productId == 0);
         emit DeleteProduct(_productId);
+        assert(products[_productId]._productId == 0);
     }
     
     // Delete account
@@ -137,9 +137,4 @@ contract MyContract is UserContract {
         require(products[_productId]._productId != 0, "Product does not exist!");
         return products[_productId];
     }
-
-    // Product count
-    // function getProductCount() public view returns(uint) {
-    //     return productCount;
-    // }
 }
