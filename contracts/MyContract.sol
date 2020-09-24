@@ -1,13 +1,14 @@
 // SPDX-License-Identifier: MIT
 pragma experimental ABIEncoderV2;
-pragma solidity ^0.7.0;
+pragma solidity >=0.4.22 <0.8.0;
 
-// import "./User.sol";
-import "./Openzepplin/Ownable.sol";
-import "./Openzepplin/SafeMath.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/math/SafeMath.sol";
+import "@openzeppelin/upgrades/contracts/Initializable.sol";
 
-contract UserContract is Ownable {
+contract UserContract is Ownable, Initializable {
     using SafeMath for uint;
+    address payable admin;
 
     mapping(address => User) public users;
     uint userCounter;
@@ -21,10 +22,14 @@ contract UserContract is Ownable {
     
     // Events
     event NewSellerCreated(uint indexed _id);
+
+    function initialize(address payable _admin) public initializer {
+        admin = _admin;
+    }
     
 
     // Create new User
-    function createNewAccount(string memory _hashID) external returns(bool) {
+    function createNewAccount(string calldata _hashID) external returns(bool) {
         address payable _user = msg.sender;
         require(users[_user]._id == 0, "User has already existed");
         require(encode(_hashID) != encode(''), 'Invalid hash id');
@@ -39,7 +44,7 @@ contract UserContract is Ownable {
     }
     
     // Update account details
-    function updateAccountDetails(string memory _hashID) external {
+    function updateAccountDetails(string calldata _hashID) external {
         address payable _account = msg.sender;
         require(users[_account]._id > 0, "User does not exist");
         require(encode(_hashID) != encode(''), 'Invalid hash id');
@@ -82,7 +87,7 @@ contract MyContract is UserContract {
     event DeleteProduct(uint _id);
     
     // Create new product
-    function createNewProduct(string memory _productDetails) external {
+    function createNewProduct(string calldata _productDetails) external {
         address payable _seller = msg.sender;
         findUserByAddress(_seller);
         require(encode(_productDetails) != encode(''), "Input can not be blank");
@@ -96,7 +101,7 @@ contract MyContract is UserContract {
     }
     
     // Update an existing product
-    function updateProduct(uint _productId, string memory _productDetails) external {
+    function updateProduct(uint _productId, string calldata _productDetails) external {
         address payable _seller = msg.sender;
         require(products[_productId]._productId > 0, "Product does not exist!");
         require(
