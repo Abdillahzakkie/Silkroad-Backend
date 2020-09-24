@@ -97,7 +97,7 @@ contract('User Contract', accounts => {
     });
 })
 
-contract('Product Contract', () => {
+contract('MyContract Contract', () => {
     let contract = null;
     
     before(async () => contract = await MyContract.deployed());
@@ -132,7 +132,7 @@ contract('Product Contract', () => {
         assert(product['_productDetails'] === 'product 2');
     })
 
-    it('should not update a non existing user', async () => {
+    it("should not update a non existing user's product", async () => {
         try {
             await contract.updateProduct(1, 'product 2', { from: account2 });
         } catch (error) {
