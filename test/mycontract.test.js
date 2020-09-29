@@ -1,4 +1,5 @@
-const MyContract = artifacts.require('ProductContract');
+// Load compiled artifacts
+const MyContract = artifacts.require('MyContract');
 
 let account1 = null;
 let account2 = null;
