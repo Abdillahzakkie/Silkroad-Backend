@@ -24,8 +24,8 @@ contract('User Contract', accounts => {
         await contract.createNewAccount(userOne);
 
         const user = await contract.findUserByAddress(account1);
-        assert(user['_account'] === account1);
-        assert(user['_hashID'] === userOne);
+        assert.equal(user['_account'], account1);
+        assert.equal(user['_hashID'], userOne);
     });
 
     it('should not create multiple account for one user', async () => {
@@ -43,9 +43,9 @@ contract('User Contract', accounts => {
     it('should update valid user account', async () => {
         await contract.updateAccountDetails('new hash id');
         const user = await contract.findUserByAddress(account1);
-        assert(user['_hashID'] === 'new hash id');
-        assert(user['_account'] === account1);
-        assert(user['_id'] === '1')
+        assert.equal(user['_hashID'], 'new hash id');
+        assert.equal(user['_account'], account1);
+        assert.equal(user['_id'], '1')
     })
 
     it('should not update account details for non existing user', async () => {
@@ -69,9 +69,9 @@ contract('User Contract', accounts => {
 
     it('should find user by address', async () => {
         const user = await contract.findUserByAddress(account1);
-        assert(user['_id'] === '1');
-        assert(user['_hashID'] === 'new hash id');
-        assert(user['_account'] === account1);
+        assert.equal(user['_id'], '1');
+        assert.equal(user['_hashID'], 'new hash id');
+        assert.equal(user['_account'], account1);
     })
 
     it('should throw an error if user does not exist', async () => {
@@ -110,8 +110,8 @@ contract('MyContract Contract', () => {
         await contract.createNewProduct(productOne.productDetails, { from: account1 });
         const product = await contract.findProduct(1);
 
-        assert(product['_seller'] === account1);
-        assert(product['_productDetails'] === productOne.productDetails);
+        assert.equal(product['_seller'], account1);
+        assert.equal(product['_productDetails'], productOne.productDetails);
     })
 
     it('should not create new product for anonymous user', async () => {
@@ -129,8 +129,8 @@ contract('MyContract Contract', () => {
         await contract.updateProduct(1, 'product 2');
         const product = await contract.findProduct(1);
 
-        assert(product['_seller'] === account1);
-        assert(product['_productDetails'] === 'product 2');
+        assert.equal(product['_seller'], account1);
+        assert.equal(product['_productDetails'], 'product 2');
     })
 
     it("should not update a non existing user's product", async () => {
@@ -145,8 +145,8 @@ contract('MyContract Contract', () => {
 
     it('should get product by id', async () => {
         const product = await contract.findProduct(1);
-        assert(product['_seller'] === account1);
-        assert(product['_productDetails'] === 'product 2');
+        assert.equal(product['_seller'], account1);
+        assert.equal(product['_productDetails'], 'product 2');
     })
 
     it('should throw an error if product does not exist', async () => {
