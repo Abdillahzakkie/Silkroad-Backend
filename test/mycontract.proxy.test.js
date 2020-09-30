@@ -13,6 +13,6 @@
 //   // Test case
 //   it('retrieve returns a value previously initialized', async () => {
 //     const admin = await this.contract.admin();
-//     assert(admin === accounts[0])
+//     assert.equal(admin, accounts[0])
 //   });
 // });
