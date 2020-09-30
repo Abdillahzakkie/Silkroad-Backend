@@ -2,13 +2,12 @@
 pragma experimental ABIEncoderV2;
 pragma solidity >=0.4.22 <0.8.0;
 
-import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/math/SafeMath.sol";
-import "@openzeppelin/upgrades/contracts/Initializable.sol";
+import "@openzeppelin/contracts-ethereum-package/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts-ethereum-package/contracts/math/SafeMath.sol";
+import "@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol";
 
-contract UserContract is Ownable, Initializable {
+contract UserContract is OwnableUpgradeSafe {
     using SafeMath for uint;
-    address payable admin;
 
     mapping(address => User) public users;
     uint userCounter;
@@ -22,12 +21,7 @@ contract UserContract is Ownable, Initializable {
     
     // Events
     event NewSellerCreated(uint indexed _id);
-
-    function initialize(address payable _admin) public initializer {
-        admin = _admin;
-    }
     
-
     // Create new User
     function createNewAccount(string calldata _hashID) external returns(bool) {
         address payable _user = msg.sender;

@@ -1,5 +1,5 @@
 {
-  "name": "Backend",
+  "name": "SikRoad Backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,11 +14,11 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@openzeppelin/contracts-ethereum-package": "^3.0.0",
     "@openzeppelin/upgrades": "^2.8.0",
     "truffle": "^5.1.41"
   },
   "devDependencies": {
-    "@openzeppelin/contracts": "^3.2.0",
     "@openzeppelin/truffle-upgrades": "^1.1.0"
   }
 }

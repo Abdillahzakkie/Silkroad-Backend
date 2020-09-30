@@ -1,0 +1,100 @@
+{
+  "manifestVersion": "3.1",
+  "impls": {
+    "0d0848d5da7b1df0fbebabe5ba46dc005be19bc342dfce1450c880dd0001f9b4": {
+      "address": "0xDB6B9fC335f127862f56EB56b7c048F767F5a9dF",
+      "txHash": "0xd610ec7a382cdbbb855a0cbe0a6bad00be34e7d00a3ea6ee74873c201c261a04",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "initialized",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:26"
+          },
+          {
+            "contract": "Initializable",
+            "label": "______gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:61"
+          },
+          {
+            "contract": "ContextUpgradeSafe",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts/GSN/Context.sol:25"
+          },
+          {
+            "contract": "OwnableUpgradeSafe",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/access/Ownable.sol:18"
+          },
+          {
+            "contract": "OwnableUpgradeSafe",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/access/Ownable.sol:78"
+          },
+          {
+            "contract": "UserContract",
+            "label": "users",
+            "type": "t_mapping(t_address,t_struct(User)56_storage)",
+            "src": "MyContract.sol:12"
+          },
+          {
+            "contract": "UserContract",
+            "label": "userCounter",
+            "type": "t_uint256",
+            "src": "MyContract.sol:13"
+          },
+          {
+            "contract": "MyContract",
+            "label": "productCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:69"
+          },
+          {
+            "contract": "MyContract",
+            "label": "products",
+            "type": "t_mapping(t_uint256,t_struct(Product)238_storage)",
+            "src": "MyContract.sol:71"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_uint256,t_struct(Product)238_storage)": {
+            "label": "mapping(uint256 => struct MyContract.Product)"
+          },
+          "t_mapping(t_address,t_struct(User)56_storage)": {
+            "label": "mapping(address => struct UserContract.User)"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    }
+  },
+  "admin": {
+    "address": "0x0CD32Ac2e19D1d82A49c77D21EA4FBd90DDDd25e",
+    "txHash": "0xddfe7a61ca6b158284f500f4a0fdef47d4ff858d051e00d0b319de623e0d3c56"
+  }
+}
