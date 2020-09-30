@@ -6,11 +6,13 @@ import "@openzeppelin/contracts-ethereum-package/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts-ethereum-package/contracts/math/SafeMath.sol";
 import "@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol";
 
-contract UserContract is OwnableUpgradeSafe {
+contract UserContract is Initializable {
     using SafeMath for uint;
+    uint userCounter;
+    address payable public admin;
+
 
     mapping(address => User) public users;
-    uint userCounter;
     
     // Structures
     struct User {
@@ -21,6 +23,10 @@ contract UserContract is OwnableUpgradeSafe {
     
     // Events
     event NewSellerCreated(uint indexed _id);
+
+    function initialize(address payable _admin) initializer public {
+        admin = _admin;
+    }
     
     // Create new User
     function createNewAccount(string calldata _hashID) external returns(bool) {
