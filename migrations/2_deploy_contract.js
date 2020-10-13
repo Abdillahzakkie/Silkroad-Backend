@@ -12,5 +12,5 @@ module.exports = async function (deployer, _, accounts) {
       unsafeAllowCustomTypes: true 
     }
   );
-  console.log(`Deployed: ${instance.address}`);
+  console.log(`Deployed contract: ${instance.address}`);
 }

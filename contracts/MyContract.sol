@@ -16,52 +16,44 @@ contract UserContract is Initializable {
     
     // Structures
     struct User {
-        address payable _account;
-        string _hashID;
-        uint _id;
+        address payable user;
+        string details;
+        uint id;
     }
     
     // Events
-    event NewSellerCreated(uint indexed _id);
+    event NewSellerCreated(uint indexed id);
 
     function initialize(address payable _admin) initializer public {
         admin = _admin;
     }
     
     // Create new User
-    function createNewAccount(string calldata _hashID) external returns(bool) {
+    function createNewAccount(string calldata _details) external {
         address payable _user = msg.sender;
-        require(users[_user]._id == 0, "User has already existed");
-        require(encode(_hashID) != encode(''), 'Invalid hash id');
+        require(users[_user].id == 0, "User has already existed");
+        require(encode(_details) != encode(''), "Data field can not be empty");
 
-        userCounter = incrementCounter(userCounter);
-        
-        User memory _newUser = User(_user, _hashID, userCounter);
-        
+        userCounter = userCounter.add(1);
+        User memory _newUser = User(_user, _details, userCounter);
         users[_user] = _newUser;
         emit NewSellerCreated(userCounter);
-        return true;
     }
     
     // Update account details
-    function updateAccountDetails(string calldata _hashID) external {
-        address payable _account = msg.sender;
-        require(users[_account]._id > 0, "User does not exist");
-        require(encode(_hashID) != encode(''), 'Invalid hash id');
-        require(_account == users[_account]._account, 'Not a valid owner');
+    function updateAccountDetails(string calldata _details) external {
+        address payable _user = msg.sender;
+        require(users[_user].id > 0, "User does not exist");
+        require(encode(_details) != encode(''), "Data field can not be empty");
+        require(_user == users[_user].user, "Not a valid owner");
 
-        users[_account]._hashID = _hashID;
+        users[_user].details = _details;
     }
 
     // Find user by address
-    function findUserByAddress(address _account) public view returns(User memory) {
-        require(users[_account]._id > 0, "User does not exist");
-        return users[_account];
-    }
-
-    // Increment seller's count
-    function incrementCounter(uint _count) internal pure returns(uint) {
-        return _count.add(1);
+    function findUserByAddress(address _user) public view returns(User memory) {
+        require(users[_user].id > 0, "User does not exist");
+        return users[_user];
     }
 
     function encode(string memory _data) internal pure returns(bytes32) {
@@ -70,76 +62,93 @@ contract UserContract is Initializable {
 
 }
 
-contract MyContract is UserContract {
+contract ProductContract is UserContract {
     using SafeMath for uint;
     uint public productCount;
     
     mapping(uint => Product) private products;
 
     struct Product {
-        address payable _seller;
-        string _productDetails;
-        uint _productId;
+        address payable seller;
+        string details;
+        uint id;
+        // uint price;
     }
     
     // Events
-    event NewProductCreated(uint _id);
-    event DeleteProduct(uint _id);
+    event NewProductCreated(uint id);
+    event DeleteProduct(uint id);
     
     // Create new product
-    function createNewProduct(string calldata _productDetails) external {
+    function createNewProduct(string calldata _details) external {
         address payable _seller = msg.sender;
         findUserByAddress(_seller);
-        require(encode(_productDetails) != encode(''), "Input can not be blank");
+        require(encode(_details) != encode(''), "Data field can not be empty");
 
         // increment product count
-        productCount = incrementCounter(productCount);
+        productCount = productCount.add(1);
         
-        Product memory _newProduct = Product(_seller, _productDetails, productCount);
+        Product memory _newProduct = Product(_seller, _details, productCount);
         products[productCount] = _newProduct;
         emit NewProductCreated(productCount);
     }
     
     // Update an existing product
-    function updateProduct(uint _productId, string calldata _productDetails) external {
+    function updateProduct(uint _id, string calldata _details) external {
         address payable _seller = msg.sender;
-        require(products[_productId]._productId > 0, "Product does not exist!");
-        require(
-            _seller == products[_productId]._seller, 
-            "Only valid owner is allowed to edit product"
-        );
-        require(encode(_productDetails) != encode(''), "Input can not be blank");
+        require(products[_id].id > 0, "Product does not exist!");
+        require(_seller == products[_id].seller, "Not a valid owner");
+        require(encode(_details) != encode(''), "Input can not be blank");
         
-        products[_productId] = Product(_seller, _productDetails, _productId);
+        products[_id] = Product(_seller, _details, _id);
     }
     
     // Delete existing product
-    function deleteProduct(uint _productId) public returns(bool) {
+    function deleteProduct(uint _id) public returns(bool) {
         address payable _seller = msg.sender;
-        require(products[_productId]._productId > 0, "Product does not exist!");
+        require(products[_id].id > 0, "Product does not exist!");
         require(
-            _seller == products[_productId]._seller, 
+            _seller == products[_id].seller, 
             "Only valid owner is allowed to delete product"
         );
-        delete products[_productId];
-        emit DeleteProduct(_productId);
-        assert(products[_productId]._productId == 0);
+        delete products[_id];
+        emit DeleteProduct(_id);
+        assert(products[_id].id == 0);
     }
     
     // Delete account
     function deleteUserAccount() external {
         address payable _seller = msg.sender;
-        require(users[_seller]._id > 0, "User does not exist");
+        require(users[_seller].id > 0, "User does not exist");
 
         for(uint i = 1; i <= productCount; i++) {
-            if(products[i]._seller == _seller) delete products[i];
+            if(_seller == products[i].seller) delete products[i];
         }
         delete users[_seller];
     }
 
     // find product
-    function findProduct(uint _productId) public view returns(Product memory) {
-        require(products[_productId]._productId != 0, "Product does not exist!");
-        return products[_productId];
+    function findProduct(uint _id) public view returns(Product memory) {
+        require(products[_id].id != 0, "Product does not exist!");
+        return products[_id];
     }
 }
+
+contract OrderBook is ProductContract {
+    uint orderCount;
+    mapping(uint => Order) public orders;
+
+    struct Order {
+        uint id;
+        address payable seller;
+        address payable buyer;
+    }
+
+    // function buy(uint _id) public payable returns(uint) {
+    //     Product memory product = super.findProduct(_id);
+    //     uint price = product;
+    //     require(product);
+    // }
+}
+
+contract MyContract is OrderBook { }
