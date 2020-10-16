@@ -357,10 +357,2383 @@
           }
         }
       }
+    },
+    "49d1a2357eda9a321531f2850b90e5ad63a23b5e36a13759ad8f6e0f7bc36386": {
+      "address": "0xfe4534c20C2D06086B772cF165871390dc2F2124",
+      "txHash": "0x9540bd3b3e455f1a694e63d60185a107106df57f8c8192d492af96eae94a06c0",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "initialized",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:26"
+          },
+          {
+            "contract": "Initializable",
+            "label": "______gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:61"
+          },
+          {
+            "contract": "UserContract",
+            "label": "userCounter",
+            "type": "t_uint256",
+            "src": "MyContract.sol:11"
+          },
+          {
+            "contract": "UserContract",
+            "label": "admin",
+            "type": "t_address_payable",
+            "src": "MyContract.sol:12"
+          },
+          {
+            "contract": "UserContract",
+            "label": "users",
+            "type": "t_mapping(t_address,t_struct(User)58_storage)",
+            "src": "MyContract.sol:15"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "productCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:67"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "products",
+            "type": "t_mapping(t_uint256,t_struct(Product)238_storage)",
+            "src": "MyContract.sol:69"
+          },
+          {
+            "contract": "OrderBook",
+            "label": "orderCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:139"
+          },
+          {
+            "contract": "OrderBook",
+            "label": "orders",
+            "type": "t_mapping(t_uint256,t_struct(Order)501_storage)",
+            "src": "MyContract.sol:140"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_uint256,t_struct(Order)501_storage)": {
+            "label": "mapping(uint256 => struct OrderBook.Order)"
+          },
+          "t_mapping(t_uint256,t_struct(Product)238_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Product)"
+          },
+          "t_address_payable": {
+            "label": "address payable"
+          },
+          "t_mapping(t_address,t_struct(User)58_storage)": {
+            "label": "mapping(address => struct UserContract.User)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "6bfc950119c2348fde39359859d329e396ff1c317ef049d198ff4350ad6d5bc8": {
+      "address": "0x3911FEAC6c9C2AcCbA374cCE74562BD5cFFd6855",
+      "txHash": "0x36d7583e5460ba1b2fecb7b8da54ab7f791f708ed1ac4e9442795f709bd23ac4",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "initialized",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:26"
+          },
+          {
+            "contract": "Initializable",
+            "label": "______gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:61"
+          },
+          {
+            "contract": "UserContract",
+            "label": "userCounter",
+            "type": "t_uint256",
+            "src": "MyContract.sol:11"
+          },
+          {
+            "contract": "UserContract",
+            "label": "admin",
+            "type": "t_address_payable",
+            "src": "MyContract.sol:12"
+          },
+          {
+            "contract": "UserContract",
+            "label": "users",
+            "type": "t_mapping(t_address,t_struct(User)58_storage)",
+            "src": "MyContract.sol:15"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "productCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:67"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "products",
+            "type": "t_mapping(t_uint256,t_struct(Product)238_storage)",
+            "src": "MyContract.sol:69"
+          },
+          {
+            "contract": "OrderBook",
+            "label": "orderCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:140"
+          },
+          {
+            "contract": "OrderBook",
+            "label": "orders",
+            "type": "t_mapping(t_uint256,t_struct(Order)508_storage)",
+            "src": "MyContract.sol:141"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_uint256,t_struct(Order)508_storage)": {
+            "label": "mapping(uint256 => struct OrderBook.Order)"
+          },
+          "t_mapping(t_uint256,t_struct(Product)238_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Product)"
+          },
+          "t_address_payable": {
+            "label": "address payable"
+          },
+          "t_mapping(t_address,t_struct(User)58_storage)": {
+            "label": "mapping(address => struct UserContract.User)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "ce96ebce3d1038d337abf2a398c91dfe6999627bb0f05122dcae167db2fdb54d": {
+      "address": "0xf8d4A31DC075C5E5cb7371EfcFB9320f032bea76",
+      "txHash": "0xaf22f87d1f55afd582f973ceb23ea369212739d1a6aea2fa38f53a45015261f8",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "initialized",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:26"
+          },
+          {
+            "contract": "Initializable",
+            "label": "______gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:61"
+          },
+          {
+            "contract": "UserContract",
+            "label": "reEntrancyMutex",
+            "type": "t_bool",
+            "src": "MyContract.sol:11"
+          },
+          {
+            "contract": "UserContract",
+            "label": "userCounter",
+            "type": "t_uint256",
+            "src": "MyContract.sol:12"
+          },
+          {
+            "contract": "UserContract",
+            "label": "admin",
+            "type": "t_address_payable",
+            "src": "MyContract.sol:13"
+          },
+          {
+            "contract": "UserContract",
+            "label": "users",
+            "type": "t_mapping(t_address,t_struct(User)60_storage)",
+            "src": "MyContract.sol:16"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "productCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:69"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "orderCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:70"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "products",
+            "type": "t_mapping(t_uint256,t_struct(Product)254_storage)",
+            "src": "MyContract.sol:72"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "carts",
+            "type": "t_mapping(t_address,t_struct(Cart)261_storage)",
+            "src": "MyContract.sol:73"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "orders",
+            "type": "t_mapping(t_uint256,t_struct(Order)266_storage)",
+            "src": "MyContract.sol:74"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_uint256,t_struct(Product)254_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Product)"
+          },
+          "t_mapping(t_address,t_struct(Cart)261_storage)": {
+            "label": "mapping(address => struct ProductContract.Cart)"
+          },
+          "t_mapping(t_uint256,t_struct(Order)266_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Order)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_address_payable": {
+            "label": "address payable"
+          },
+          "t_mapping(t_address,t_struct(User)60_storage)": {
+            "label": "mapping(address => struct UserContract.User)"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "222e2fe286a1544f2b7668315474be5720fd3216e8fe655639e25375570ae09e": {
+      "address": "0xb8822Cce1b57F8884C9949F7d5E2FaceEB687015",
+      "txHash": "0x8bcb04540be6371cf4341cd04fcd0bad7851fa5a51f813e536a850b849538024",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "initialized",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:26"
+          },
+          {
+            "contract": "Initializable",
+            "label": "______gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:61"
+          },
+          {
+            "contract": "UserContract",
+            "label": "reEntrancyMutex",
+            "type": "t_bool",
+            "src": "MyContract.sol:11"
+          },
+          {
+            "contract": "UserContract",
+            "label": "userCounter",
+            "type": "t_uint256",
+            "src": "MyContract.sol:12"
+          },
+          {
+            "contract": "UserContract",
+            "label": "admin",
+            "type": "t_address_payable",
+            "src": "MyContract.sol:13"
+          },
+          {
+            "contract": "UserContract",
+            "label": "users",
+            "type": "t_mapping(t_address,t_struct(User)60_storage)",
+            "src": "MyContract.sol:16"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "productCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:69"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "orderCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:70"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "products",
+            "type": "t_mapping(t_uint256,t_struct(Product)254_storage)",
+            "src": "MyContract.sol:72"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "carts",
+            "type": "t_mapping(t_address,t_struct(Cart)261_storage)",
+            "src": "MyContract.sol:73"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "orders",
+            "type": "t_mapping(t_uint256,t_struct(Order)266_storage)",
+            "src": "MyContract.sol:74"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_uint256,t_struct(Product)254_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Product)"
+          },
+          "t_mapping(t_address,t_struct(Cart)261_storage)": {
+            "label": "mapping(address => struct ProductContract.Cart)"
+          },
+          "t_mapping(t_uint256,t_struct(Order)266_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Order)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_address_payable": {
+            "label": "address payable"
+          },
+          "t_mapping(t_address,t_struct(User)60_storage)": {
+            "label": "mapping(address => struct UserContract.User)"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "fa6038f480cc2bf38e7313a22bf941eb692398e502088cc1e5cdbfc38ced513a": {
+      "address": "0x32FD3d2565cEABcEE99c789a29CA7Bb35988E46D",
+      "txHash": "0x02753c9296f12eff6d2f2831bee3ab8c24d1759a8dc2a830852fb9372cc486d4",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "initialized",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:26"
+          },
+          {
+            "contract": "Initializable",
+            "label": "______gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:61"
+          },
+          {
+            "contract": "UserContract",
+            "label": "reEntrancyMutex",
+            "type": "t_bool",
+            "src": "MyContract.sol:11"
+          },
+          {
+            "contract": "UserContract",
+            "label": "userCounter",
+            "type": "t_uint256",
+            "src": "MyContract.sol:12"
+          },
+          {
+            "contract": "UserContract",
+            "label": "admin",
+            "type": "t_address_payable",
+            "src": "MyContract.sol:13"
+          },
+          {
+            "contract": "UserContract",
+            "label": "users",
+            "type": "t_mapping(t_address,t_struct(User)60_storage)",
+            "src": "MyContract.sol:16"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "productCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:69"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "orderCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:70"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "products",
+            "type": "t_mapping(t_uint256,t_struct(Product)254_storage)",
+            "src": "MyContract.sol:72"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "carts",
+            "type": "t_mapping(t_address,t_struct(Cart)261_storage)",
+            "src": "MyContract.sol:73"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "orders",
+            "type": "t_mapping(t_uint256,t_struct(Order)266_storage)",
+            "src": "MyContract.sol:74"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_uint256,t_struct(Product)254_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Product)"
+          },
+          "t_mapping(t_address,t_struct(Cart)261_storage)": {
+            "label": "mapping(address => struct ProductContract.Cart)"
+          },
+          "t_mapping(t_uint256,t_struct(Order)266_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Order)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_address_payable": {
+            "label": "address payable"
+          },
+          "t_mapping(t_address,t_struct(User)60_storage)": {
+            "label": "mapping(address => struct UserContract.User)"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "f6903410c01d532bce0fb773ca2bbd1db558cec5fbdfc83e66b7b5c5656b9df4": {
+      "address": "0x208b254B77Dd3a60616046A3d4493417da4CdCF4",
+      "txHash": "0x60b21211c230889ba05d9e2e97cf231c1f8b6f6393a2d4e6e5fe51c398c1a2e2",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "initialized",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:26"
+          },
+          {
+            "contract": "Initializable",
+            "label": "______gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:61"
+          },
+          {
+            "contract": "UserContract",
+            "label": "reEntrancyMutex",
+            "type": "t_bool",
+            "src": "MyContract.sol:11"
+          },
+          {
+            "contract": "UserContract",
+            "label": "userCounter",
+            "type": "t_uint256",
+            "src": "MyContract.sol:12"
+          },
+          {
+            "contract": "UserContract",
+            "label": "admin",
+            "type": "t_address_payable",
+            "src": "MyContract.sol:13"
+          },
+          {
+            "contract": "UserContract",
+            "label": "users",
+            "type": "t_mapping(t_address,t_struct(User)60_storage)",
+            "src": "MyContract.sol:16"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "productCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:69"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "orderCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:70"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "products",
+            "type": "t_mapping(t_uint256,t_struct(Product)254_storage)",
+            "src": "MyContract.sol:72"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "carts",
+            "type": "t_mapping(t_address,t_struct(Cart)261_storage)",
+            "src": "MyContract.sol:73"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "orders",
+            "type": "t_mapping(t_uint256,t_struct(Order)266_storage)",
+            "src": "MyContract.sol:74"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_uint256,t_struct(Product)254_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Product)"
+          },
+          "t_mapping(t_address,t_struct(Cart)261_storage)": {
+            "label": "mapping(address => struct ProductContract.Cart)"
+          },
+          "t_mapping(t_uint256,t_struct(Order)266_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Order)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_address_payable": {
+            "label": "address payable"
+          },
+          "t_mapping(t_address,t_struct(User)60_storage)": {
+            "label": "mapping(address => struct UserContract.User)"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "f580ebe36d35144b5a3a07a8bb552f58bade6469a81b840669af9e55abf61a85": {
+      "address": "0x97fDDe365469c425993E763f31eD2e5b93d9250F",
+      "txHash": "0xff1094c34fb6d73050d43de4f48e59f2add5ae56912980a723204be9fff0ff2d",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "initialized",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:26"
+          },
+          {
+            "contract": "Initializable",
+            "label": "______gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:61"
+          },
+          {
+            "contract": "UserContract",
+            "label": "reEntrancyMutex",
+            "type": "t_bool",
+            "src": "MyContract.sol:11"
+          },
+          {
+            "contract": "UserContract",
+            "label": "userCounter",
+            "type": "t_uint256",
+            "src": "MyContract.sol:12"
+          },
+          {
+            "contract": "UserContract",
+            "label": "admin",
+            "type": "t_address_payable",
+            "src": "MyContract.sol:13"
+          },
+          {
+            "contract": "UserContract",
+            "label": "users",
+            "type": "t_mapping(t_address,t_struct(User)60_storage)",
+            "src": "MyContract.sol:16"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "productCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:69"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "orderCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:70"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "products",
+            "type": "t_mapping(t_uint256,t_struct(Product)254_storage)",
+            "src": "MyContract.sol:72"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "carts",
+            "type": "t_mapping(t_address,t_struct(Cart)259_storage)",
+            "src": "MyContract.sol:73"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "orders",
+            "type": "t_mapping(t_uint256,t_struct(Order)264_storage)",
+            "src": "MyContract.sol:74"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_uint256,t_struct(Product)254_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Product)"
+          },
+          "t_mapping(t_address,t_struct(Cart)259_storage)": {
+            "label": "mapping(address => struct ProductContract.Cart)"
+          },
+          "t_mapping(t_uint256,t_struct(Order)264_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Order)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_address_payable": {
+            "label": "address payable"
+          },
+          "t_mapping(t_address,t_struct(User)60_storage)": {
+            "label": "mapping(address => struct UserContract.User)"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "ddc5157af4add419594b0b7a73061652bcc7a41033a80b6699fdcd66b8e09802": {
+      "address": "0x5B5bFa5dC67879D666Eb633d46361818bA0835a1",
+      "txHash": "0x92deb2f1259c2e0a11683fbfdd22acfd2d74c9b5f52dcec8489cfeb7a073d21c",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "initialized",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:26"
+          },
+          {
+            "contract": "Initializable",
+            "label": "______gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:61"
+          },
+          {
+            "contract": "UserContract",
+            "label": "reEntrancyMutex",
+            "type": "t_bool",
+            "src": "MyContract.sol:11"
+          },
+          {
+            "contract": "UserContract",
+            "label": "userCounter",
+            "type": "t_uint256",
+            "src": "MyContract.sol:12"
+          },
+          {
+            "contract": "UserContract",
+            "label": "admin",
+            "type": "t_address_payable",
+            "src": "MyContract.sol:13"
+          },
+          {
+            "contract": "UserContract",
+            "label": "users",
+            "type": "t_mapping(t_address,t_struct(User)60_storage)",
+            "src": "MyContract.sol:16"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "productCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:69"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "orderCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:70"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "products",
+            "type": "t_mapping(t_uint256,t_struct(Product)254_storage)",
+            "src": "MyContract.sol:72"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "carts",
+            "type": "t_mapping(t_address,t_struct(Cart)259_storage)",
+            "src": "MyContract.sol:73"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "orders",
+            "type": "t_mapping(t_uint256,t_struct(Order)264_storage)",
+            "src": "MyContract.sol:74"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_uint256,t_struct(Product)254_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Product)"
+          },
+          "t_mapping(t_address,t_struct(Cart)259_storage)": {
+            "label": "mapping(address => struct ProductContract.Cart)"
+          },
+          "t_mapping(t_uint256,t_struct(Order)264_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Order)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_address_payable": {
+            "label": "address payable"
+          },
+          "t_mapping(t_address,t_struct(User)60_storage)": {
+            "label": "mapping(address => struct UserContract.User)"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "18ee6937e42131cb967610fed2e7bb7783d8487e1a25b00c94eb67906272f1ea": {
+      "address": "0xa409f267f15dEF850cC820eF30F1265FD41731d2",
+      "txHash": "0x8313982dc234ac8155217e739e1c1f5ed81af5b89b65b15f11005492d15f1fb0",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "initialized",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:26"
+          },
+          {
+            "contract": "Initializable",
+            "label": "______gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:61"
+          },
+          {
+            "contract": "UserContract",
+            "label": "reEntrancyMutex",
+            "type": "t_bool",
+            "src": "MyContract.sol:11"
+          },
+          {
+            "contract": "UserContract",
+            "label": "userCounter",
+            "type": "t_uint256",
+            "src": "MyContract.sol:12"
+          },
+          {
+            "contract": "UserContract",
+            "label": "admin",
+            "type": "t_address_payable",
+            "src": "MyContract.sol:13"
+          },
+          {
+            "contract": "UserContract",
+            "label": "users",
+            "type": "t_mapping(t_address,t_struct(User)60_storage)",
+            "src": "MyContract.sol:16"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "productCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:69"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "orderCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:70"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "products",
+            "type": "t_mapping(t_uint256,t_struct(Product)258_storage)",
+            "src": "MyContract.sol:72"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "carts",
+            "type": "t_mapping(t_address,t_struct(Cart)263_storage)",
+            "src": "MyContract.sol:73"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "inCart",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "MyContract.sol:74"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "orders",
+            "type": "t_mapping(t_uint256,t_struct(Order)268_storage)",
+            "src": "MyContract.sol:75"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_uint256,t_struct(Product)258_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Product)"
+          },
+          "t_mapping(t_address,t_struct(Cart)263_storage)": {
+            "label": "mapping(address => struct ProductContract.Cart)"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_mapping(t_uint256,t_struct(Order)268_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Order)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_address_payable": {
+            "label": "address payable"
+          },
+          "t_mapping(t_address,t_struct(User)60_storage)": {
+            "label": "mapping(address => struct UserContract.User)"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "a81d40003e21ad094b6094f9e3d6e9e29f6d773b99289daf8a753e022df23bcc": {
+      "address": "0x12FE447B05DA8EB9EE43565Ce30306136ac30377",
+      "txHash": "0x2efc5b127ea4abafd5c6ce8307c4d05e0ede5003e5fd9892a0f26d523c1fcfd4",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "initialized",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:26"
+          },
+          {
+            "contract": "Initializable",
+            "label": "______gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:61"
+          },
+          {
+            "contract": "UserContract",
+            "label": "reEntrancyMutex",
+            "type": "t_bool",
+            "src": "MyContract.sol:11"
+          },
+          {
+            "contract": "UserContract",
+            "label": "userCounter",
+            "type": "t_uint256",
+            "src": "MyContract.sol:12"
+          },
+          {
+            "contract": "UserContract",
+            "label": "admin",
+            "type": "t_address_payable",
+            "src": "MyContract.sol:13"
+          },
+          {
+            "contract": "UserContract",
+            "label": "users",
+            "type": "t_mapping(t_address,t_struct(User)60_storage)",
+            "src": "MyContract.sol:16"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "productCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:69"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "orderCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:70"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "products",
+            "type": "t_mapping(t_uint256,t_struct(Product)258_storage)",
+            "src": "MyContract.sol:72"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "carts",
+            "type": "t_mapping(t_address,t_struct(Cart)263_storage)",
+            "src": "MyContract.sol:73"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "inCart",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "MyContract.sol:74"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "orders",
+            "type": "t_mapping(t_uint256,t_struct(Order)268_storage)",
+            "src": "MyContract.sol:75"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_uint256,t_struct(Product)258_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Product)"
+          },
+          "t_mapping(t_address,t_struct(Cart)263_storage)": {
+            "label": "mapping(address => struct ProductContract.Cart)"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_mapping(t_uint256,t_struct(Order)268_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Order)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_address_payable": {
+            "label": "address payable"
+          },
+          "t_mapping(t_address,t_struct(User)60_storage)": {
+            "label": "mapping(address => struct UserContract.User)"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "06f24ed725af6bdf4ea1eb4026dd84bb273bb2f94d499b3a3b0217dcfb024af9": {
+      "address": "0x77c79177B7d837A258e9BF850A5c22c34B5F11A6",
+      "txHash": "0x8a9f10591ba31733905cb620507c7f902f53fecfe5e3c8c8cac9af5771533dd2",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "initialized",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:26"
+          },
+          {
+            "contract": "Initializable",
+            "label": "______gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:61"
+          },
+          {
+            "contract": "UserContract",
+            "label": "reEntrancyMutex",
+            "type": "t_bool",
+            "src": "MyContract.sol:11"
+          },
+          {
+            "contract": "UserContract",
+            "label": "userCounter",
+            "type": "t_uint256",
+            "src": "MyContract.sol:12"
+          },
+          {
+            "contract": "UserContract",
+            "label": "admin",
+            "type": "t_address_payable",
+            "src": "MyContract.sol:13"
+          },
+          {
+            "contract": "UserContract",
+            "label": "users",
+            "type": "t_mapping(t_address,t_struct(User)60_storage)",
+            "src": "MyContract.sol:16"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "productCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:69"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "orderCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:70"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "products",
+            "type": "t_mapping(t_uint256,t_struct(Product)258_storage)",
+            "src": "MyContract.sol:72"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "carts",
+            "type": "t_mapping(t_address,t_struct(Cart)263_storage)",
+            "src": "MyContract.sol:73"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "inCart",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "MyContract.sol:74"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "orders",
+            "type": "t_mapping(t_uint256,t_struct(Order)268_storage)",
+            "src": "MyContract.sol:75"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_uint256,t_struct(Product)258_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Product)"
+          },
+          "t_mapping(t_address,t_struct(Cart)263_storage)": {
+            "label": "mapping(address => struct ProductContract.Cart)"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_mapping(t_uint256,t_struct(Order)268_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Order)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_address_payable": {
+            "label": "address payable"
+          },
+          "t_mapping(t_address,t_struct(User)60_storage)": {
+            "label": "mapping(address => struct UserContract.User)"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "b732c2399cf161988d473634beb81f9bfbcccb59645aa5f324a6cae4df93506b": {
+      "address": "0xD2CBe38EB409b948331C348eD5564ff6FdB61B37",
+      "txHash": "0xd3114b60b8d7b7ccf639b96cb2d82d2d7a40861c13aba33248f9b0d46d480862",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "initialized",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:26"
+          },
+          {
+            "contract": "Initializable",
+            "label": "______gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:61"
+          },
+          {
+            "contract": "UserContract",
+            "label": "reEntrancyMutex",
+            "type": "t_bool",
+            "src": "MyContract.sol:11"
+          },
+          {
+            "contract": "UserContract",
+            "label": "userCounter",
+            "type": "t_uint256",
+            "src": "MyContract.sol:12"
+          },
+          {
+            "contract": "UserContract",
+            "label": "admin",
+            "type": "t_address_payable",
+            "src": "MyContract.sol:13"
+          },
+          {
+            "contract": "UserContract",
+            "label": "users",
+            "type": "t_mapping(t_address,t_struct(User)60_storage)",
+            "src": "MyContract.sol:16"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "productCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:69"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "orderCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:70"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "products",
+            "type": "t_mapping(t_uint256,t_struct(Product)258_storage)",
+            "src": "MyContract.sol:72"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "carts",
+            "type": "t_mapping(t_address,t_struct(Cart)263_storage)",
+            "src": "MyContract.sol:73"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "inCart",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "MyContract.sol:74"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "orders",
+            "type": "t_mapping(t_uint256,t_struct(Order)268_storage)",
+            "src": "MyContract.sol:75"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_uint256,t_struct(Product)258_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Product)"
+          },
+          "t_mapping(t_address,t_struct(Cart)263_storage)": {
+            "label": "mapping(address => struct ProductContract.Cart)"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_mapping(t_uint256,t_struct(Order)268_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Order)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_address_payable": {
+            "label": "address payable"
+          },
+          "t_mapping(t_address,t_struct(User)60_storage)": {
+            "label": "mapping(address => struct UserContract.User)"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "4bb986ce3744f40f1b5f1657c5f4df74ec253dc785263da8e7014dd759ddf1db": {
+      "address": "0x463e460C5F75Ea341FFa020Af1040FB59d2d6AF1",
+      "txHash": "0xa8ab799ff7b2627fceb67a26162507636699674fd6eeca94306d04ced853ae18",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "initialized",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:26"
+          },
+          {
+            "contract": "Initializable",
+            "label": "______gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:61"
+          },
+          {
+            "contract": "UserContract",
+            "label": "reEntrancyMutex",
+            "type": "t_bool",
+            "src": "MyContract.sol:11"
+          },
+          {
+            "contract": "UserContract",
+            "label": "userCounter",
+            "type": "t_uint256",
+            "src": "MyContract.sol:12"
+          },
+          {
+            "contract": "UserContract",
+            "label": "admin",
+            "type": "t_address_payable",
+            "src": "MyContract.sol:13"
+          },
+          {
+            "contract": "UserContract",
+            "label": "users",
+            "type": "t_mapping(t_address,t_struct(User)60_storage)",
+            "src": "MyContract.sol:16"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "productCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:69"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "orderCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:70"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "products",
+            "type": "t_mapping(t_uint256,t_struct(Product)258_storage)",
+            "src": "MyContract.sol:72"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "carts",
+            "type": "t_mapping(t_address,t_struct(Cart)263_storage)",
+            "src": "MyContract.sol:73"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "inCart",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "MyContract.sol:74"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "orders",
+            "type": "t_mapping(t_uint256,t_struct(Order)268_storage)",
+            "src": "MyContract.sol:75"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_uint256,t_struct(Product)258_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Product)"
+          },
+          "t_mapping(t_address,t_struct(Cart)263_storage)": {
+            "label": "mapping(address => struct ProductContract.Cart)"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_mapping(t_uint256,t_struct(Order)268_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Order)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_address_payable": {
+            "label": "address payable"
+          },
+          "t_mapping(t_address,t_struct(User)60_storage)": {
+            "label": "mapping(address => struct UserContract.User)"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "50445250c32e2ea0af5cedfe2dec0cb4a18b9d888c914bebc617c464f16aa72c": {
+      "address": "0xfe23f3db73BFe233C42248070231c54C4e8D3413",
+      "txHash": "0xb2f73d1e375cec3185118c0e3d1281ee661335e38ee6d3e6559b701ed1e8d72f",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "initialized",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:26"
+          },
+          {
+            "contract": "Initializable",
+            "label": "______gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:61"
+          },
+          {
+            "contract": "UserContract",
+            "label": "reEntrancyMutex",
+            "type": "t_bool",
+            "src": "MyContract.sol:11"
+          },
+          {
+            "contract": "UserContract",
+            "label": "userCounter",
+            "type": "t_uint256",
+            "src": "MyContract.sol:12"
+          },
+          {
+            "contract": "UserContract",
+            "label": "admin",
+            "type": "t_address_payable",
+            "src": "MyContract.sol:13"
+          },
+          {
+            "contract": "UserContract",
+            "label": "users",
+            "type": "t_mapping(t_address,t_struct(User)60_storage)",
+            "src": "MyContract.sol:16"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "productCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:69"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "orderCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:70"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "products",
+            "type": "t_mapping(t_uint256,t_struct(Product)258_storage)",
+            "src": "MyContract.sol:72"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "carts",
+            "type": "t_mapping(t_address,t_struct(Cart)263_storage)",
+            "src": "MyContract.sol:73"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "inCart",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "MyContract.sol:74"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "orders",
+            "type": "t_mapping(t_uint256,t_struct(Order)268_storage)",
+            "src": "MyContract.sol:75"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_uint256,t_struct(Product)258_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Product)"
+          },
+          "t_mapping(t_address,t_struct(Cart)263_storage)": {
+            "label": "mapping(address => struct ProductContract.Cart)"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_mapping(t_uint256,t_struct(Order)268_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Order)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_address_payable": {
+            "label": "address payable"
+          },
+          "t_mapping(t_address,t_struct(User)60_storage)": {
+            "label": "mapping(address => struct UserContract.User)"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "1109ebab0a126c23acdc81db074a24ad31c5f62566a91f119f38c9e96460d874": {
+      "address": "0xf767D52480ed57E2D453572a3A2bDE8358894E87",
+      "txHash": "0x02ea3e5e2ab4f81bfe9da3961a703eedf51ead1fc1c33a8a028026d685528036",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "initialized",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:26"
+          },
+          {
+            "contract": "Initializable",
+            "label": "______gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:61"
+          },
+          {
+            "contract": "UserContract",
+            "label": "reEntrancyMutex",
+            "type": "t_bool",
+            "src": "MyContract.sol:11"
+          },
+          {
+            "contract": "UserContract",
+            "label": "userCounter",
+            "type": "t_uint256",
+            "src": "MyContract.sol:12"
+          },
+          {
+            "contract": "UserContract",
+            "label": "admin",
+            "type": "t_address_payable",
+            "src": "MyContract.sol:13"
+          },
+          {
+            "contract": "UserContract",
+            "label": "users",
+            "type": "t_mapping(t_address,t_struct(User)60_storage)",
+            "src": "MyContract.sol:16"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "productCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:69"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "orderCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:70"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "products",
+            "type": "t_mapping(t_uint256,t_struct(Product)258_storage)",
+            "src": "MyContract.sol:72"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "carts",
+            "type": "t_mapping(t_address,t_struct(Cart)263_storage)",
+            "src": "MyContract.sol:73"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "inCart",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "MyContract.sol:74"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "orders",
+            "type": "t_mapping(t_uint256,t_struct(Order)268_storage)",
+            "src": "MyContract.sol:75"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_uint256,t_struct(Product)258_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Product)"
+          },
+          "t_mapping(t_address,t_struct(Cart)263_storage)": {
+            "label": "mapping(address => struct ProductContract.Cart)"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_mapping(t_uint256,t_struct(Order)268_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Order)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_address_payable": {
+            "label": "address payable"
+          },
+          "t_mapping(t_address,t_struct(User)60_storage)": {
+            "label": "mapping(address => struct UserContract.User)"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "86216cd159eea484e28d333aafd928c36aabdefade77f5b3585f29a89e1f1f42": {
+      "address": "0x5f394db60A354B547186AE2589823fB37eFaF12f",
+      "txHash": "0xfdfd7bcfa3f211a789d8bb04e8e5ee6f94d701707328df5620ea6a90787dd2c2",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "initialized",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:26"
+          },
+          {
+            "contract": "Initializable",
+            "label": "______gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:61"
+          },
+          {
+            "contract": "UserContract",
+            "label": "reEntrancyMutex",
+            "type": "t_bool",
+            "src": "MyContract.sol:11"
+          },
+          {
+            "contract": "UserContract",
+            "label": "userCounter",
+            "type": "t_uint256",
+            "src": "MyContract.sol:12"
+          },
+          {
+            "contract": "UserContract",
+            "label": "admin",
+            "type": "t_address_payable",
+            "src": "MyContract.sol:13"
+          },
+          {
+            "contract": "UserContract",
+            "label": "users",
+            "type": "t_mapping(t_address,t_struct(User)60_storage)",
+            "src": "MyContract.sol:16"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "productCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:69"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "orderCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:70"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "products",
+            "type": "t_mapping(t_uint256,t_struct(Product)258_storage)",
+            "src": "MyContract.sol:72"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "carts",
+            "type": "t_mapping(t_address,t_struct(Cart)263_storage)",
+            "src": "MyContract.sol:73"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "inCart",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "MyContract.sol:74"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "orders",
+            "type": "t_mapping(t_uint256,t_struct(Order)268_storage)",
+            "src": "MyContract.sol:75"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_uint256,t_struct(Product)258_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Product)"
+          },
+          "t_mapping(t_address,t_struct(Cart)263_storage)": {
+            "label": "mapping(address => struct ProductContract.Cart)"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_mapping(t_uint256,t_struct(Order)268_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Order)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_address_payable": {
+            "label": "address payable"
+          },
+          "t_mapping(t_address,t_struct(User)60_storage)": {
+            "label": "mapping(address => struct UserContract.User)"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "72a2428cc76f8dadee39818d76cd74c6cbdc890ae8b43ca29ef3dde91cc1ff7b": {
+      "address": "0x15C656EFFfDC9dd20cB5575627f36a55cE29Da13",
+      "txHash": "0x16c1e5cc66c72dcfee67071f4963421ca2444a1c8219c379654476a2ed720e9d",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "initialized",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:26"
+          },
+          {
+            "contract": "Initializable",
+            "label": "______gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:61"
+          },
+          {
+            "contract": "UserContract",
+            "label": "reEntrancyMutex",
+            "type": "t_bool",
+            "src": "MyContract.sol:11"
+          },
+          {
+            "contract": "UserContract",
+            "label": "userCounter",
+            "type": "t_uint256",
+            "src": "MyContract.sol:12"
+          },
+          {
+            "contract": "UserContract",
+            "label": "admin",
+            "type": "t_address_payable",
+            "src": "MyContract.sol:13"
+          },
+          {
+            "contract": "UserContract",
+            "label": "users",
+            "type": "t_mapping(t_address,t_struct(User)60_storage)",
+            "src": "MyContract.sol:16"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "productCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:69"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "orderCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:70"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "products",
+            "type": "t_mapping(t_uint256,t_struct(Product)258_storage)",
+            "src": "MyContract.sol:72"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "carts",
+            "type": "t_mapping(t_address,t_struct(Cart)263_storage)",
+            "src": "MyContract.sol:73"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "inCart",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "MyContract.sol:74"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "orders",
+            "type": "t_mapping(t_uint256,t_struct(Order)268_storage)",
+            "src": "MyContract.sol:75"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_uint256,t_struct(Product)258_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Product)"
+          },
+          "t_mapping(t_address,t_struct(Cart)263_storage)": {
+            "label": "mapping(address => struct ProductContract.Cart)"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_mapping(t_uint256,t_struct(Order)268_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Order)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_address_payable": {
+            "label": "address payable"
+          },
+          "t_mapping(t_address,t_struct(User)60_storage)": {
+            "label": "mapping(address => struct UserContract.User)"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "d946fd2d1a4812359ffb9cd46c090eaafc4d9a89bc668df25a10a26a85e53a1f": {
+      "address": "0x0101Af216939d49A7330e35635dc25384058C1fD",
+      "txHash": "0xedbad5449dd2839dc9feebbd63626be6a2a194dac0e630400c444495a36520d9",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "initialized",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:26"
+          },
+          {
+            "contract": "Initializable",
+            "label": "______gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:61"
+          },
+          {
+            "contract": "UserContract",
+            "label": "reEntrancyMutex",
+            "type": "t_bool",
+            "src": "MyContract.sol:11"
+          },
+          {
+            "contract": "UserContract",
+            "label": "userCounter",
+            "type": "t_uint256",
+            "src": "MyContract.sol:12"
+          },
+          {
+            "contract": "UserContract",
+            "label": "users",
+            "type": "t_mapping(t_address,t_struct(User)56_storage)",
+            "src": "MyContract.sol:15"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "productCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:63"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "products",
+            "type": "t_mapping(t_uint256,t_struct(Product)232_storage)",
+            "src": "MyContract.sol:65"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "carts",
+            "type": "t_mapping(t_address,t_struct(Cart)237_storage)",
+            "src": "MyContract.sol:66"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "inCart",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "MyContract.sol:67"
+          },
+          {
+            "contract": "MyContract",
+            "label": "admin",
+            "type": "t_address_payable",
+            "src": "MyContract.sol:179"
+          },
+          {
+            "contract": "MyContract",
+            "label": "featureProductRate",
+            "type": "t_uint256",
+            "src": "MyContract.sol:180"
+          },
+          {
+            "contract": "MyContract",
+            "label": "orderCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:181"
+          },
+          {
+            "contract": "MyContract",
+            "label": "orders",
+            "type": "t_mapping(t_uint256,t_struct(Order)663_storage)",
+            "src": "MyContract.sol:183"
+          },
+          {
+            "contract": "MyContract",
+            "label": "isFeaturedProduct",
+            "type": "t_mapping(t_uint256,t_bool)",
+            "src": "MyContract.sol:184"
+          }
+        ],
+        "types": {
+          "t_address_payable": {
+            "label": "address payable"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_uint256,t_struct(Order)663_storage)": {
+            "label": "mapping(uint256 => struct MyContract.Order)"
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)"
+          },
+          "t_mapping(t_uint256,t_struct(Product)232_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Product)"
+          },
+          "t_mapping(t_address,t_struct(Cart)237_storage)": {
+            "label": "mapping(address => struct ProductContract.Cart)"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_address,t_struct(User)56_storage)": {
+            "label": "mapping(address => struct UserContract.User)"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "df8a3800a963805e015176506026b0787a1c3f99d0d1a7f7b9e8e22ab84c3368": {
+      "address": "0xd5AF12a4Db6c1Dc63773756A3C0811a7ce456F0F",
+      "txHash": "0xbaf5e1ef720f82f8f153593473903fd29820fa8b8f3e79441b416aca2695daa1",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "initialized",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:26"
+          },
+          {
+            "contract": "Initializable",
+            "label": "______gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:61"
+          },
+          {
+            "contract": "UserContract",
+            "label": "reEntrancyMutex",
+            "type": "t_bool",
+            "src": "MyContract.sol:11"
+          },
+          {
+            "contract": "UserContract",
+            "label": "userCounter",
+            "type": "t_uint256",
+            "src": "MyContract.sol:12"
+          },
+          {
+            "contract": "UserContract",
+            "label": "users",
+            "type": "t_mapping(t_address,t_struct(User)56_storage)",
+            "src": "MyContract.sol:15"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "productCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:63"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "products",
+            "type": "t_mapping(t_uint256,t_struct(Product)232_storage)",
+            "src": "MyContract.sol:65"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "carts",
+            "type": "t_mapping(t_address,t_struct(Cart)237_storage)",
+            "src": "MyContract.sol:66"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "inCart",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "MyContract.sol:67"
+          },
+          {
+            "contract": "MyContract",
+            "label": "admin",
+            "type": "t_address_payable",
+            "src": "MyContract.sol:179"
+          },
+          {
+            "contract": "MyContract",
+            "label": "featureProductRate",
+            "type": "t_uint256",
+            "src": "MyContract.sol:180"
+          },
+          {
+            "contract": "MyContract",
+            "label": "orderCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:181"
+          },
+          {
+            "contract": "MyContract",
+            "label": "orders",
+            "type": "t_mapping(t_uint256,t_struct(Order)663_storage)",
+            "src": "MyContract.sol:183"
+          },
+          {
+            "contract": "MyContract",
+            "label": "isFeaturedProduct",
+            "type": "t_mapping(t_uint256,t_bool)",
+            "src": "MyContract.sol:184"
+          }
+        ],
+        "types": {
+          "t_address_payable": {
+            "label": "address payable"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_uint256,t_struct(Order)663_storage)": {
+            "label": "mapping(uint256 => struct MyContract.Order)"
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)"
+          },
+          "t_mapping(t_uint256,t_struct(Product)232_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Product)"
+          },
+          "t_mapping(t_address,t_struct(Cart)237_storage)": {
+            "label": "mapping(address => struct ProductContract.Cart)"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_address,t_struct(User)56_storage)": {
+            "label": "mapping(address => struct UserContract.User)"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "740d897c9c13f042569cbe4c143076467ac300e619e6cc94d738932709dcf0cf": {
+      "address": "0x88E51a996049Ba4817498DE2043A6a5DB7DEB2a8",
+      "txHash": "0x07566f7c0a532149825c2aac8f57834b0db78a7f07ace12583278d5737a255cd",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "initialized",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:26"
+          },
+          {
+            "contract": "Initializable",
+            "label": "______gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:61"
+          },
+          {
+            "contract": "UserContract",
+            "label": "reEntrancyMutex",
+            "type": "t_bool",
+            "src": "MyContract.sol:11"
+          },
+          {
+            "contract": "UserContract",
+            "label": "userCounter",
+            "type": "t_uint256",
+            "src": "MyContract.sol:12"
+          },
+          {
+            "contract": "UserContract",
+            "label": "users",
+            "type": "t_mapping(t_address,t_struct(User)56_storage)",
+            "src": "MyContract.sol:15"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "productCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:63"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "products",
+            "type": "t_mapping(t_uint256,t_struct(Product)234_storage)",
+            "src": "MyContract.sol:65"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "carts",
+            "type": "t_mapping(t_address,t_struct(Cart)239_storage)",
+            "src": "MyContract.sol:66"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "inCart",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "MyContract.sol:67"
+          },
+          {
+            "contract": "MyContract",
+            "label": "admin",
+            "type": "t_address_payable",
+            "src": "MyContract.sol:182"
+          },
+          {
+            "contract": "MyContract",
+            "label": "featureProductRate",
+            "type": "t_uint256",
+            "src": "MyContract.sol:183"
+          },
+          {
+            "contract": "MyContract",
+            "label": "orderCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:184"
+          },
+          {
+            "contract": "MyContract",
+            "label": "orders",
+            "type": "t_mapping(t_uint256,t_struct(Order)674_storage)",
+            "src": "MyContract.sol:186"
+          },
+          {
+            "contract": "MyContract",
+            "label": "isFeaturedProduct",
+            "type": "t_mapping(t_uint256,t_bool)",
+            "src": "MyContract.sol:187"
+          }
+        ],
+        "types": {
+          "t_address_payable": {
+            "label": "address payable"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_uint256,t_struct(Order)674_storage)": {
+            "label": "mapping(uint256 => struct MyContract.Order)"
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)"
+          },
+          "t_mapping(t_uint256,t_struct(Product)234_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Product)"
+          },
+          "t_mapping(t_address,t_struct(Cart)239_storage)": {
+            "label": "mapping(address => struct ProductContract.Cart)"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_address,t_struct(User)56_storage)": {
+            "label": "mapping(address => struct UserContract.User)"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "a33b6e3a70101a33fe7bfe03ec5d512985aefa92edde6acfbf6e572910f5bede": {
+      "address": "0x6b063dc0Df94EeE63Ef380164F1368A0479F7a60",
+      "txHash": "0x2d2d2972f59782a77976c83c50507efbc1caf7fbf935fadb5052e8497fe69966",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "initialized",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:26"
+          },
+          {
+            "contract": "Initializable",
+            "label": "______gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol:61"
+          },
+          {
+            "contract": "UserContract",
+            "label": "reEntrancyMutex",
+            "type": "t_bool",
+            "src": "MyContract.sol:11"
+          },
+          {
+            "contract": "UserContract",
+            "label": "userCounter",
+            "type": "t_uint256",
+            "src": "MyContract.sol:12"
+          },
+          {
+            "contract": "UserContract",
+            "label": "users",
+            "type": "t_mapping(t_address,t_struct(User)56_storage)",
+            "src": "MyContract.sol:15"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "productCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:63"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "products",
+            "type": "t_mapping(t_uint256,t_struct(Product)234_storage)",
+            "src": "MyContract.sol:65"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "carts",
+            "type": "t_mapping(t_address,t_struct(Cart)239_storage)",
+            "src": "MyContract.sol:66"
+          },
+          {
+            "contract": "ProductContract",
+            "label": "inCart",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "MyContract.sol:67"
+          },
+          {
+            "contract": "MyContract",
+            "label": "admin",
+            "type": "t_address_payable",
+            "src": "MyContract.sol:182"
+          },
+          {
+            "contract": "MyContract",
+            "label": "featureProductRate",
+            "type": "t_uint256",
+            "src": "MyContract.sol:183"
+          },
+          {
+            "contract": "MyContract",
+            "label": "orderCount",
+            "type": "t_uint256",
+            "src": "MyContract.sol:184"
+          },
+          {
+            "contract": "MyContract",
+            "label": "orders",
+            "type": "t_mapping(t_uint256,t_struct(Order)674_storage)",
+            "src": "MyContract.sol:186"
+          },
+          {
+            "contract": "MyContract",
+            "label": "isFeaturedProduct",
+            "type": "t_mapping(t_uint256,t_bool)",
+            "src": "MyContract.sol:187"
+          }
+        ],
+        "types": {
+          "t_address_payable": {
+            "label": "address payable"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_uint256,t_struct(Order)674_storage)": {
+            "label": "mapping(uint256 => struct MyContract.Order)"
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)"
+          },
+          "t_mapping(t_uint256,t_struct(Product)234_storage)": {
+            "label": "mapping(uint256 => struct ProductContract.Product)"
+          },
+          "t_mapping(t_address,t_struct(Cart)239_storage)": {
+            "label": "mapping(address => struct ProductContract.Cart)"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_address,t_struct(User)56_storage)": {
+            "label": "mapping(address => struct UserContract.User)"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
     }
   },
   "admin": {
-    "address": "0x1393bfD98d6245D9D699802aFfCbfdC0114fa876",
-    "txHash": "0x2c5dfd6f7346b25aa2dcd70e1260fdb03bd606047febd829f6a1858660e52f5b"
+    "address": "0xb62c47cBf2BABC1EB7881B09472AA7c16CF3d427",
+    "txHash": "0x6f7b9c5e453bfec70bf0e16c4401b9e073e33624e78cdea4559f9977a99d2d02"
   }
 }
